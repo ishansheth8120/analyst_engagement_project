@@ -1,18 +1,33 @@
 # Analyst Engagement Intelligence
 
-This project analyzes research analyst engagement across teams and provides automated weekly reporting, risk flags, and commentary for the COO research management office.
+A Python-based application with a Streamlit frontend that automates the analysis of weekly analyst-client engagement. It flags significant drops in client interactions or engagement duration and generates actionable insights using GenAI via OpenRouter.
 
 ## Features
-- Weekly aggregation of engagement
-- Drop detection if engagement falls >50%
-- Auto-generated business commentary
-- Ready for automation (weekly schedule)
+- Upload weekly analyst-client interaction CSVs
+- Automatic data cleaning and week-wise aggregation
+- Flags significant drops in analyst engagement
+- Generates professional GenAI-powered insights
+- Download summarized reports in CSV format
 
-## Folder Structure
-- `data/`: Input CSV files
-- `output/`: Generated reports
-- `scripts/`: Python modules
+## How It Works
+- Upload Data: Upload a CSV with analyst interactions (analyst_id, client_id, date, duration_mins).
+- Analyze: The app computes weekly summaries per analyst and detects engagement drops.
+- Insights: Auto-generates concise weekly engagement insights using OpenRouter's LLMs (e.g., openrouter/cypher-alpha:free).
+- Output: Downloadable report with insights and flags.
 
-## Tools
-- Python (pandas, datetime, os, glob)
-- Lightweight, extensible
+## Tech Stack
+- Python
+- Streamlit
+- Pandas
+- OpenRouter GenAI APIs
+
+## Directory Structure
+├── streamlit_app.py
+├── scripts/
+│   ├── data_cleaning.py
+│   ├── engagement_analyzer.py
+│   └── insight_generator.py
+├── sample_data/
+│   └── analyst_engagement_sample.csv
+└── README.md
+
