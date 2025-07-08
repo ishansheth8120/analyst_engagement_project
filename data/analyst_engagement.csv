@@ -1,0 +1,7 @@
+analyst_id,analyst_name,team,client_id,date,duration_mins
+A001,John Doe,Equity,C1001,23-06-2025,45
+A001,John Doe,Equity,C1002,24-06-2025,30
+A001,John Doe,Equity,C1003,25-06-2025,30
+A002,Jane Smith,Fixed Income,C1010,07-06-2025,60
+A001,John Doe,Equity,C1001,30-06-2025,7
+A001,John Doe,Equity,C1002,03-07-2025,15
