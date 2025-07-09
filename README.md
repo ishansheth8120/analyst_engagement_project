@@ -32,6 +32,29 @@ A Python-based application with a Streamlit frontend that automates the analysis
 │   └── analyst_engagement_sample.csv
 └── README.md
 
+## Getting Started (Run Locally)
+1. Clone the Repository
+git clone https://github.com/your-username/analyst-engagement-intelligence.git
+cd analyst-engagement-intelligence
+
+2. Create and Activate Virtual Environment
+python -m venv venv
+source venv/bin/activate  # on Windows: venv\Scripts\activate
+
+3. Install Requirements
+
+pip install -r requirements.txt
+
+4. Set Your API Key
+Create a .streamlit/secrets.toml file and add: (generate your api key from https://openrouter.ai/openrouter/cypher-alpha:free)
+OPENROUTER_API_KEY = "your-api-key" 
+
+5. Run the App
+streamlit run streamlit_app.py
+
+6. Open in Browser
+Visit http://localhost:8501 in your browser to use the app.
+
 
 
 
