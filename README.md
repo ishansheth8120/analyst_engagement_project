@@ -34,7 +34,7 @@ A Python-based application with a Streamlit frontend that automates the analysis
 
 ## Getting Started (Run Locally)
 1. Clone the Repository
-git clone https://github.com/your-username/analyst-engagement-intelligence.git
+git clone https/ssh url
 cd analyst-engagement-intelligence
 
 2. Create and Activate Virtual Environment
